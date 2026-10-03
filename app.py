@@ -4,6 +4,24 @@ import numpy as np
 import joblib
 
 st.set_page_config(page_title="Adaptive Hydration Optimizer", page_icon="💧", layout="centered")
+st.markdown("""
+<style>
+.stApp {
+    background-image: url("https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=1600");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.stApp > header {
+    background-color: rgba(0,0,0,0);
+}
+[data-testid="stVerticalBlock"] {
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 20px;
+    border-radius: 12px;
+}
+</style>
+""", unsafe_allow_html=True)
 with st.sidebar:
     st.image("https://em-content.zobj.net/source/apple/354/panda_1f43c.png", width=100)
     st.markdown("### 🐼 Stay hydrated like a panda!")
