@@ -4,6 +4,10 @@ import numpy as np
 import joblib
 
 st.set_page_config(page_title="Adaptive Hydration Optimizer", page_icon="💧", layout="centered")
+with st.sidebar:
+    st.image("https://em-content.zobj.net/source/apple/354/panda_1f43c.png", width=100)
+    st.markdown("### 🐼 Stay hydrated like a panda!")
+    st.write("Pandas get most of their water from the bamboo they eat. You need to drink yours directly — don't forget!")
 
 # ---------- Load model ----------
 @st.cache_resource
@@ -43,7 +47,7 @@ def recommend(model, row):
     return CLASS_NAMES[cls], proba, msg
 
 # ---------- UI ----------
-st.title("💧 Adaptive Hydration Optimizer")
+st.title("🐼💧 Adaptive Hydration Optimizer")
 st.caption("XGBoost-based real-time hydration prediction and personalized fluid-intake recommendation")
 
 st.subheader("User Profile")
@@ -92,6 +96,8 @@ if st.button("🔍 Predict Hydration Status", type="primary", use_container_widt
 
     if status == "Well-Hydrated":
         st.success(msg)
+        st.balloons()
+        st.write("🐼 Great job! Even the pandas approve.")
     elif status == "Mild Dehydration":
         st.warning(msg)
     else:
