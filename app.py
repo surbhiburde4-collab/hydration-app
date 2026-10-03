@@ -7,18 +7,18 @@ st.set_page_config(page_title="Adaptive Hydration Optimizer", page_icon="💧", 
 st.markdown("""
 <style>
 .stApp {
-    background-image: url("https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=1600");
-    background-size: cover;
-    background-position: center;
+    background-image: url("https://i.pinimg.com/originals/d9/60/fc/d960fc21a100d79ef6bd12ebbc7773c4.png");
+    background-size: 300px;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 .stApp > header {
     background-color: rgba(0,0,0,0);
 }
 [data-testid="stVerticalBlock"] {
-    background-color: rgba(255, 255, 255, 0.88);
-    padding: 20px;
-    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 25px;
+    border-radius: 15px;
 }
 </style>
 """, unsafe_allow_html=True)
